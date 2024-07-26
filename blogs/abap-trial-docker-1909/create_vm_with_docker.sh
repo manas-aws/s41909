@@ -42,7 +42,7 @@ gcloud compute instances create abap-trial-docker \
     --machine-type=e2-highmem-2 \
     --network-interface=network-tier=PREMIUM,stack-type=IPV4_ONLY,subnet=default \
     --metadata=startup-script=curl\ \
-https://raw.githubusercontent.com/google-cloud-abap/community/main/blogs/abap-trial-docker-1909/vm_startup_script.sh\ -o\ /tmp/vm_startup_script.sh$'\n'chmod\ 755\ /tmp/vm_startup_script.sh$'\n'nohup\ /tmp/vm_startup_script.sh\ \>\ /tmp/output.txt\ \& \
+https://raw.githubusercontent.com/manas-aws/s41909/main/blogs/abap-trial-docker-1909/vm_startup_script.sh\ -o\ /tmp/vm_startup_script.sh$'\n'chmod\ 755\ /tmp/vm_startup_script.sh$'\n'nohup\ /tmp/vm_startup_script.sh\ \>\ /tmp/output.txt\ \& \
     --maintenance-policy=MIGRATE \
     --provisioning-model=STANDARD \
     --service-account=$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
