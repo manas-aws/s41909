@@ -42,6 +42,6 @@ sudo docker run \
   -p 30213:30213 \
   -p 50000:50000 \
   -p 50001:50001 \
-  sapse/abap-cloud-developer-trial \
+  sapse/abap-cloud-developer-trial:ABAPTRIAL_2022 \
   -skip-limits-check \
   --agree-to-sap-license
